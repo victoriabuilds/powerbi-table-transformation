@@ -7,44 +7,49 @@ The task involved connecting to multiple CSV files, cleaning data, creating calc
 and preparing the model for reporting.
 
 
-Overview:
+
+### Power BI Data Model Update – Product Tables
+
+**Overview:**
 We are updating the internal reports in Power BI with new data and modifications to the product table. The steps below outline the key objectives and tasks.
 
-Key Objectives:
 
-Connect to New Data Sources
+**Key Objectives:**
 
-Create queries to connect to the following CSV files:
+**Connect to New Data Sources**
 
-Product Category Lookup
+* Create queries to connect to the following CSV files:
 
-Product Subcategory Lookup
+  * `Product Category Lookup`
+  * `Product Subcategory Lookup`
 
-Query Setup
+**Query Setup**
 
-Name the queries:
+* Name the queries:
 
-Product Category Lookup
+  * `Product Category Lookup`
+  * `Product Subcategory Lookup`
+* Promote column headers and confirm that all data types are correctly set.
 
-Product Subcategory Lookup
+**Product Table Modifications**
 
-Promote column headers and confirm that all data types are correctly set.
+* **SKU Type Extraction:**
 
-Product Table Modifications
+  * Add a new column in the Product table to extract all characters **before the dash (“-”)** in the `Product SKU` column. Name this column `SKU Type`.
+  * Update the `SKU Type` calculation to extract all characters **before the second dash** instead of the first.
 
-SKU Type Extraction:
+* **Product Style Cleanup:**
 
-Add a new column in the Product table to extract all characters before the dash (“-”) in the Product SKU column. Name this column SKU Type.
+  * Replace zeros (`0`) in the `Product Style` column with `"NA"`.
 
-Update the SKU Type calculation to extract all characters before the second dash instead of the first.
+**Finalize Updates**
 
-Product Style Cleanup:
+* Close and load all queries to the Power BI data model.
 
-Replace zeros (0) in the Product Style column with "NA".
+---
 
-Finalize Updates
+If you want, I can also make an **even more concise, presentation-friendly version** that fits on a single slide. Do you want me to do that?
 
-Close and load all queries to the Power BI data model.
 
 
 
