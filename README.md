@@ -63,7 +63,7 @@ We are updating the internal reports in Power BI with new data and modifications
 - Verified and corrected data types
 
 ### 3. SKU Type Column Creation
-- Extracted characters before the **first dash (-)**
+- Extracted characters before the **first dash (-)** , name this column SKU Type
 - Updated logic to extract characters before the **second dash**
 
 ### 4. Data Cleaning
